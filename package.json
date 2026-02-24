@@ -4,23 +4,26 @@
   "version": "0.1.0",
   "description": "React host that consumes Angular remote and injects content into its slot",
   "scripts": {
-    "start": "webpack serve --config webpack.config.js --port 4200",
-    "build": "webpack --config webpack.config.js",
-    "clean": "rimraf dist"
+    "start": "nx serve react-host-mfe",
+    "build": "nx build react-host-mfe",
+    "clean": "nx clean react-host-mfe"
   },
   "devDependencies": {
-    "typescript": "^5.4.5",
-    "ts-loader": "^9.5.1",
-    "webpack": "^5.93.0",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.0.4",
-    "html-webpack-plugin": "^5.5.3",
-    "css-loader": "^6.9.1",
-    "style-loader": "^3.3.4",
-    "rimraf": "^5.0.5",
+    "@nx/react": "22.5.2",
+    "@nx/webpack": "22.5.2",
     "@types/node": "^20.11.17",
     "@types/react": "^18.3.5",
-    "@types/react-dom": "^18.3.0"
+    "@types/react-dom": "^18.3.0",
+    "css-loader": "^6.9.1",
+    "html-webpack-plugin": "^5.5.3",
+    "nx": "22.5.2",
+    "rimraf": "^5.0.5",
+    "style-loader": "^3.3.4",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.4.5",
+    "webpack": "^5.93.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
   },
   "dependencies": {
     "react": "^18.3.1",
