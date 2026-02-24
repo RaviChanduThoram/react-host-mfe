@@ -1,0 +1,1 @@
+declare module 'angularRemote/register' { export function register(): Promise<void>; }
