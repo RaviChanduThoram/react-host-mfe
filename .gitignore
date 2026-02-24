@@ -1,1 +1,4 @@
 node_modules/
+dist/
+.nx/
+apps/react-host-mfe/dist-ts/

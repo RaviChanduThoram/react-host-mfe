@@ -9,7 +9,7 @@ module.exports = {
   entry: path.resolve(__dirname, 'src/main.tsx'),
   output: {
     publicPath: 'auto',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, '../../dist/apps/react-host-mfe'),
     clean: true,
   },
   resolve: { extensions: ['.tsx', '.ts', '.jsx', '.js'] },
@@ -35,7 +35,7 @@ module.exports = {
   ],
   devServer: {
     port: 4200,
-    static: { directory: path.resolve(__dirname, 'dist') },
+    static: { directory: path.resolve(__dirname, '../../dist/apps/react-host-mfe') },
     historyApiFallback: true,
     hot: true,
   },
